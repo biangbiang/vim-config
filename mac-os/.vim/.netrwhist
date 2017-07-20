@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/usr/local/etc/nginx/vhosts'
+let g:netrw_dirhist_2='/usr/local/etc/nginx'
+let g:netrw_dirhist_3='/Users/apple/Desktop/$RECYCLE.BIN'
+let g:netrw_dirhist_4='/usr/local/etc/nginx/vhosts'
+let g:netrw_dirhist_5='/Users/apple'
+let g:netrw_dirhist_6='/usr/local/etc/nginx/vhosts'
