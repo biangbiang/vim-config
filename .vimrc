@@ -13,6 +13,7 @@ au BufWrite /private/etc/pw.* set nowritebackup
 
 "set possible markdown file to markdown filetype"
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown
+au BufRead,BufNewFile *.{vue} set filetype=html
 
 set nocompatible " Use Vim defaults
 set bs=2 " backspacing over everything in insert mode
@@ -21,7 +22,8 @@ set history=1000 " keep 100 lines of history
 set ruler " show the cursor position
 
 "not my style, just meet the needs of some unique project"
-set expandtab  "set tab to be backspace"
+set expandtab  " set tab to be whitespace"
+set smarttab   " smart work with expandtab for backspace 
 
 set viminfo='20,\"200 " keep a .viminfo file
 set number
@@ -39,7 +41,10 @@ set virtualedit=all
 let &termencoding=&encoding
 set fileencodings=utf-8,gbk
 set noimdisable
-set fdm=indent "set foldmethod"
+" set fdm=indent "set foldmethod"
+set sm
+set ambiwidth=double
+" set whichwrap=b,s,h
 
 autocmd! InsertLeave * set imdisable|set iminsert=0
 autocmd! InsertEnter * set noimdisable|set iminsert=0
