@@ -4,4 +4,4 @@ node_modules/*
 log
 *.swp
 *.sh
-.vim/.netrwhist
+.netrwhist
